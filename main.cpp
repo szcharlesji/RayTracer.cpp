@@ -1,5 +1,8 @@
 // Creator: Cheng Ji
 
+#include "color.h"
+#include "vec3.h"
+
 #include <iostream>
 
 int main()
@@ -22,17 +25,8 @@ int main()
         // Print pixels
         for (int i = 0; i < image_width; ++i)
         {
-            // Pixel color in RGB
-            double r = double(i) / (image_width - 1);
-            double g = double(j) / (image_height - 1);
-            double b = 0.25;
-
-            // Convert to 0-255
-            int ir = static_cast<int>(255.999 * r);
-            int ig = static_cast<int>(255.999 * g);
-            int ib = static_cast<int>(255.999 * b);
-
-            std::cout << ir << ' ' << ig << ' ' << ib << '\n';
+            color pixel_color(double(i) / (image_width - 1), double(j) / (image_height - 1), 0.25);
+            write_color(std::cout, pixel_color);
         }
     }
 
