@@ -1,0 +1,3 @@
+/workspaces/RayTracer.cpp/build/CMakeFiles/RayTracer.dir
+/workspaces/RayTracer.cpp/build/CMakeFiles/edit_cache.dir
+/workspaces/RayTracer.cpp/build/CMakeFiles/rebuild_cache.dir
